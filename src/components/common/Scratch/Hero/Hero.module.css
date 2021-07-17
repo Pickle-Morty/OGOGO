@@ -1,0 +1,94 @@
+.hero {
+  padding: 50px 0;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.bg {
+  width: 500px;
+  height: 500px;
+}
+.content h1 {
+  font-family: "Gilroy", sans-serif;
+  font-size: 55px;
+  font-style: normal;
+  margin-bottom: 15px;
+  color: #ff7a00;
+  font-weight: bold;
+}
+.linear {
+  position: absolute;
+  z-index: -1;
+}
+.linear:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.linear:nth-child(2) {
+  bottom: 0;
+  right: 0;
+}
+.content h1 strong {
+  color: #292929;
+  font-weight: 600;
+}
+.content p {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 31px;
+  font-style: normal;
+  color: #292929;
+  margin-bottom: 50px;
+}
+.content button {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-style: normal;
+  color: white;
+  background: #ff7a00;
+  padding: 17px 70px;
+  border-radius: 40px;
+}
+.content button:hover {
+  background: #ff922d;
+}
+
+.carts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .bg {
+    display: none;
+  }
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content h1 {
+    font-size: 50px;
+  }
+  .content h1 br {
+    display: none;
+  }
+  .content button {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content h1 {
+    font-size: 35px;
+  }
+  .content p {
+    font-size: 25px;
+  }
+}

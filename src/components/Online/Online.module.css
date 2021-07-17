@@ -1,0 +1,129 @@
+.online {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10%;
+}
+
+.item {
+    width: 45%;
+}
+
+.item:first-child {
+    padding: 80px 0;
+}
+
+.heading {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 24px;
+}
+
+.item:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    column-gap: 2%;
+}
+
+.course {
+    position: relative;
+    width: 49%;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.course > p {
+    text-align: center;
+}
+
+.course:first-child {
+    background: url(../../assets/images/online/online1.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.course:first-child > p {
+    color: #fff;
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 43px;
+}
+
+.course:last-child {
+    background: #F8E01E;
+    position: relative;
+    z-index: 3;
+}
+
+.course:last-child::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../../assets/images/online/online2.png) 0 0 no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.course:last-child > p {
+    color: #000;
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 120px;
+}
+
+.button {
+    font-family: 'Gotham Pro', sans-serif;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 17px;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    padding: 13px 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .item {
+        width: 100%;
+    }
+
+    .course {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .course {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .course:last-child {
+        margin-bottom: 0;
+    }
+}

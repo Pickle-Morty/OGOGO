@@ -1,0 +1,79 @@
+.form {
+  text-align: center;
+  max-width: 1264px;
+  margin: 60px auto;
+  background: rgba(51, 51, 51, 1);
+  padding: 55px 185px;
+  border-radius: 20px;
+}
+.title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  font-style: normal;
+  margin-bottom: 42px;
+  color: rgba(255, 255, 255, 1);
+}
+.title span {
+  color: #ff7a00;
+  font-weight: 900;
+}
+.field {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 47px;
+  flex-wrap: wrap;
+}
+.field input {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  color: #c4c4c4;
+  border-radius: 20px;
+  padding: 10px 17px;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+.field input::placeholder {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  color: #c4c4c4;
+  font-size: 18px;
+  font-style: normal;
+}
+.warning {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
+  color: red;
+  margin-bottom: 20px;
+  display: none;
+}
+.warning.error {
+  display: block;
+}
+.btn {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  color: #292929;
+  background: linear-gradient(87.06deg, #ff7a00 -8.73%, #ff9900 114.08%);
+  padding: 10px 48px;
+  border-radius: 25px;
+}
+.btn:hover {
+  background: #fa983d;
+}
+
+@media screen and (max-width: 660px) {
+    .title {
+        font-size: 28px;
+    }    
+    .form {
+      padding: 55px 50px ;
+    }
+}

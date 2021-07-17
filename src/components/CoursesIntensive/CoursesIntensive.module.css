@@ -1,0 +1,109 @@
+.courses {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.text {
+  font-size: 24px;
+  margin-bottom: 75px;
+}
+
+.slide {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+  background: #fff;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.slide > img {
+  width: 100%;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px 80px 50px;
+  word-wrap: break-word;
+}
+
+.desc > h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.desc > p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slide:hover {
+  transform: scale(1.03);
+}
+
+.button {
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 17px;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  font-size: 14px;
+  color: #ff7a00;
+  padding: 13px 0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.full {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 80px 20px;
+  transform: translateY(-200%);
+  transition: all 0.5s;
+}
+
+.full.active {
+  transform: translateY(0);
+}
+
+.full > h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff7a00;
+  padding-bottom: 20px;
+}
+
+.full > p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}

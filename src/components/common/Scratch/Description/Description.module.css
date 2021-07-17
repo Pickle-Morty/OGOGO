@@ -1,0 +1,40 @@
+.description {
+  margin-bottom: 105px;
+  position: relative;
+}
+.subtitle {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  font-style: normal;
+  color: #292929;
+  margin-bottom: 63px;
+}
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.linear {
+  position: absolute;
+  z-index: -1;
+}
+.linear:nth-child(1) {
+  bottom: 0;
+  left: 0;
+}
+.linear:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 810px) {
+  .wrapper {
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 30px;
+  }
+}

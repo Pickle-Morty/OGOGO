@@ -1,0 +1,72 @@
+.form {
+  background: #161616;
+  max-width: 1064px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 55px 125px;
+  border-radius: 20px;
+}
+.title {
+  margin-bottom: 33px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  font-style: normal;
+  color: white;
+}
+.field {
+  margin-bottom: 36px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.field input {
+  padding: 14px 17px;
+  border-radius: 20px;
+  border: solid 1px #161616;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  color: #161616;
+}
+.field input::placeholder {
+  color: #c4c4c4;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+}
+.btn {
+  padding: 11px 50px;
+  color: white;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+  background: #000;
+  background: linear-gradient(87.06deg, #ff7a00 -8.73%, #ff9900 114.08%);
+  border-radius: 50px;
+}
+.btn:hover {
+  background: linear-gradient(87.06deg, #ee8829 -8.73%, #df9f40 114.08%);
+}
+
+@media screen and (max-width: 876px) {
+  .form {
+    padding: 20px 10px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .field {
+    flex-direction: column;
+  }
+  .field input {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+}
+.btn {
+  font-size: 18px;
+}
