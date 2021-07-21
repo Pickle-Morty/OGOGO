@@ -1,0 +1,33 @@
+.cart {
+  width: 300px;
+  min-height: 100px;
+  margin-bottom: 40px;
+}
+.cart svg {
+  margin-bottom: 18px;
+}
+.title {
+  margin-bottom: 15px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  color: #ff7a00;
+}
+.title strong {
+  color: #292929;
+  font-weight: 600;
+}
+.text {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #292929;
+  font-style: normal;
+}
+
+@media screen and (max-width: 810px) {
+  .cart {
+    margin: 0 auto 40px;
+  }
+}

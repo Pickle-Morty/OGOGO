@@ -1,0 +1,45 @@
+.banner {
+  background: #161616;
+  position: relative;
+}
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 292px;
+  padding: 70px 0;
+}
+.title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 63px;
+  font-style: normal;
+  color: #ff9900;
+  margin-right: 27px;
+}
+.text {
+  font-family: "Gilroy", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  max-width: 900px;
+  color: #ff9900;
+  font-weight: bold;
+}
+.text strong {
+  color: white;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1100px) {
+  .content {
+    text-align: center;
+  }
+  .text {
+    font-size: 25px;
+  }
+  .title {
+    font-size: 50px;
+    margin-right: 0;
+  }
+}

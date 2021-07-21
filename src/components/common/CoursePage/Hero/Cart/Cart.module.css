@@ -1,0 +1,19 @@
+.cart hr {
+  margin-bottom: 15px;
+  border: solid 1px #292929;
+}
+.text {
+  width: 220px;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  font-style: normal;
+  color: #292929;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .cart {
+    margin: 0 auto 20px;
+  }
+}
